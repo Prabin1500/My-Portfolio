@@ -4,10 +4,6 @@ import edu_icon from './edu-icon.png';
 import edu_icon_dark from './edu-icon-dark.png';
 import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
-import vscode from './vscode.png';
-import figma from './figma.png';
-import git from './Git.png';
-import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
@@ -26,6 +22,27 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import firebase from './firebase.png';
+import mongodb from './mongodb.png';
+import vscode from './vscode.png';
+import figma from './figma.png';
+import git from './Git.png';
+import tailwind from './tailwind.png';
+import html from './html.png';
+import react from './react.png';
+import java from './Java.png';
+import javaScript from './javascript.png';
+import css from './css.png';
+import python from './Python.png';
+import node from './node.png';
+import c from './C++-Logo.png';
+import sql from './SQL.png';
+import typescript from './typescript.png';
+import work1 from './public/work-1.png'
+import work2 from './public/work-2.png'
+import work3 from './public/work-3.png'
+import work4 from './public/work-4.png'
+import mailIcon from './mail_icon.png'
 
 export const assets = {
     code_icon,
@@ -36,6 +53,7 @@ export const assets = {
     project_icon_dark,
     vscode,
     figma,
+    firebase,
     git,
     mongodb,
     right_arrow_white,
@@ -55,29 +73,45 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    tailwind,
+    html,
+    react,
+    java,
+    javaScript,
+    css,
+    python,
+    node,
+    c,
+    sql,
+    typescript,
+    work1,
+    work2,
+    work3,
+    work4,
+    mailIcon
 };
 
 export const workData = [
     {
         title: 'Frontend project',
         description: 'Web Design',
-        bgImage: '/work-1.png',
+        bgImage: assets.work1,
     },
     {
         title: 'Geo based app',
         description: 'Mobile App',
-        bgImage: '/work-2.png',
+        bgImage: assets.work2,
     },
     {
         title: 'Photography site',
         description: 'Web Design',
-        bgImage: '/work-3.png',
+        bgImage: assets.work3,
     },
     {
         title: 'UI/UX designing',
         description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        bgImage: assets.work4,
     },
 ]
 
@@ -103,5 +137,20 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    {icon: assets.html, name: "HTML"},
+    {icon: assets.css, name: "CSS"},
+    {icon: assets.tailwind, name: "Tailwindcss"},
+    {icon: assets.react, name: "React"},
+    {icon: assets.javaScript, name: "JavaScript"},
+    {icon: assets.typescript, name: "TypeScript"},
+    {icon: assets.c, name: "C++"},
+    {icon: assets.mongodb, name: "Mongodb"},
+    {icon: assets.git, name: "git"},
+    {icon: assets.vscode, name: "VSCode"},
+    {icon: assets.figma, name: "Figma"},
+    {icon: assets.java, name: "Java"},
+    {icon: assets.python, name: "Python"},
+    {icon: assets.node, name: "Node"},
+    {icon: assets.firebase, name: "Firebase"},
+    {icon: assets.sql, name: "SQL"},
 ];
