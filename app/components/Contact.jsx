@@ -40,7 +40,7 @@ const Contact = () => {
             initial={{y: -20, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
             transition={{delay:0.3, duration: 1}}
-            className='text-center text-5xl font-Ovo mx-auto dark:text-white border-b-4 border-b-orange-300'>
+            className='text-center text-5xl font-Ovo mx-auto border-b-4 border-b-orange-300 dark:text-[#08FDD8] dark:border-b-[#08FDD8]'>
             Connect with me
           </motion.h2>
           <motion.p 

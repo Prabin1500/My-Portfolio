@@ -39,7 +39,7 @@ const Experience = ({isDarkMode}) => {
         initial={{opacity: 0, y:-20}}
         whileInView={{opacity:1, y:0}}
         transition={{duration: 0.5, delay:0.3}}
-        className='text-center text-6xl font-Ovo mx-auto border-b-4 border-b-orange-300'>
+        className='text-center text-6xl font-Ovo mx-auto border-b-4 border-b-orange-300 dark:text-[#08FDD8] dark:border-b-[#08FDD8]'>
         Work Experience
       </motion.h2>
       {timelineData.map((item, index) => (

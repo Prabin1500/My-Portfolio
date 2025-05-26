@@ -1,11 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import logo11 from '../../asstes/prabin.png';
 import arrowIcon from '../../asstes/arrow-icon.png';
 import bgheader from '../../asstes/header-bg-color.png';
 import moonIcon from '../../asstes/moon_icon.png';
-import hamburgurMenu from '../../asstes/menu-black.png';
-import closeButton from '../../asstes/close-black.png';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { BsFillPersonLinesFill } from 'react-icons/bs' 
 import { assets } from '@/asstes/assets';
 
 const Navbar = ({isDarkMode, setIsDarkMode}) => {
@@ -90,13 +89,41 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             <div className='absolute right-6 top-6' onClick={closeMenu}>
                 <Image src={isDarkMode ? assets.close_white : assets.close_black} alt='CloseButton' className='w-5 cursor-pointer' />
             </div>
-            <li><a className='font-Ovo' onClick={closeMenu} href='#top'>About</a></li>
+            <li><a className='font-Ovo' onClick={closeMenu} href='#top'>Home</a></li>
+            <li><a className='font-Ovo' onClick={closeMenu} href='#about'>About</a></li>
             <li><a className='font-Ovo' onClick={closeMenu} href='#projects'>Projects </a></li>
             <li><a className='font-Ovo' onClick={closeMenu} href='#skills'>Skills</a></li>
             <li><a className='font-Ovo' onClick={closeMenu} href='#experience'>Experience</a></li>
             <li><a className='font-Ovo' onClick={closeMenu} href='#contact'>Contact Me</a></li>
         </ul>
       </nav>
+              {/* Social icons */}
+        <div className='hidden lg:flex fixed flex-col top-[35%] left-0 '>
+            <ul>
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500'>
+                    <a className='flex justify-between items-center w-full text-white p-3 ml-3 font-Ovo'
+                    href="https://www.linkedin.com/in/prabin-dhakal7/" target="blank">
+                        LinkedIn <FaLinkedin size={30}/>
+                    </a>
+                </li>
+
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+                    <a className='flex justify-between items-center w-full text-white p-3 ml-3 font-Ovo'
+                    href="https://github.com/Prabin1500" target="blank">
+                        Github <FaGithub size={30}/>
+                    </a>
+                </li>
+
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
+                    <a className='flex justify-between items-center w-full text-white p-3 ml-3 font-Ovo'
+                    href="/PrabinDhakalResume.pdf"  target="blank" rel="noopener noreferrer">
+                        Resume <BsFillPersonLinesFill size={30}/>
+                    </a>
+
+                </li>
+            </ul>
+            
+        </div>
     </>
   )
 }

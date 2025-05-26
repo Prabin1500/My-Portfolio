@@ -38,11 +38,16 @@ import node from './node.png';
 import c from './C++-Logo.png';
 import sql from './SQL.png';
 import typescript from './typescript.png';
-import work1 from './public/work-1.png'
-import work2 from './public/work-2.png'
-import work3 from './public/work-3.png'
-import work4 from './public/work-4.png'
-import mailIcon from './mail_icon.png'
+import mailIcon from './mail_icon.png';
+import swift from './swift.png';
+import androidStudio from './Android_Studio.png';
+import cinema from './cinema.png';
+import blog from './blog.png';
+import restaurant from './Kasthamandap.png';
+import omagarden from './Omagarden.png';
+import playnlearn from './playnLearn.png';
+import recipe from './Food.png';
+import schooldays from './Schooldays.png';
 
 export const assets = {
     code_icon,
@@ -85,33 +90,68 @@ export const assets = {
     c,
     sql,
     typescript,
-    work1,
-    work2,
-    work3,
-    work4,
-    mailIcon
+    mailIcon,
+    swift,
+    androidStudio,
+    cinema,
+    blog,
+    restaurant,
+    omagarden,
+    playnlearn,
+    recipe,
+    schooldays
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: assets.work1,
+        title: 'Blog Website',
+        description: 'A full-stack blog platform where users can create, read, update, and delete blog posts.' + 
+            'Built using MERN stack (MongoDB, Express.js, Node.js, vanilla JS).',
+        tools: [assets.react, assets.html, assets.css, assets.node, assets.mongodb],
+        url: 'https://github.com/Prabin1500/BlogWebsite',
+        bgImage: assets.blog,
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: assets.work2,
+        title: 'School Days Web app',
+        description: 'A full-stack web application for school-parent communication with role-based access and messaging features.',
+        tools: [assets.node, assets.mongodb, assets.vscode, assets.html, assets.css],
+        url: 'https://github.com/Prabin1500/School-days',
+        bgImage: assets.schooldays,
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: assets.work3,
+        title: 'Movie Web App',
+        description: 'A frontend cinema-themed web application using HTML, CSS, and JavaScript to showcase movie listings and enhance UI/UX skills.',
+        tools: [assets.javaScript, assets.vscode, assets.html, assets.css],
+        url: 'https://github.com/Prabin1500/Cinema',
+        bgImage: assets.cinema,
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: assets.work4,
+        title: 'Restaurant Web App',
+        description: 'Developed a full-stack restaurant website using React, Vite, and Firebase, enabling real-time menu and system management.',
+        tools: [assets.tailwind, assets.vscode, assets.firebase, assets.git,assets.react],
+        url: 'https://github.com/bekstha/kasthamandap',
+        bgImage: assets.restaurant,
+    },
+    {
+        title: 'PlayNLearn',
+        description: 'Developed an educational iOS app using Swift and SwiftUI to teach foundational skills to children aged 2–4 through interactive games.',
+        tools: [assets.swift, assets.git, assets.figma],
+        url: 'https://github.com/Argier96/PlayNLearn',
+        bgImage: assets.playnlearn,
+    },
+    {
+        title: 'OmaGarden',
+        description: 'Developed a cross-platform mobile app using React Native and Firebase to enable plant enthusiasts to share and explore plant images.',
+        tools: [assets.react, assets.javaScript, assets.firebase],
+        url: 'https://github.com/anish0123/omaGarden',
+        bgImage: assets.omagarden,
+    },
+    {
+        title: 'Recipe App',
+        description: 'Developed an Android app using Java and Android SDK to suggest recipes based on available ingredients, enhancing meal planning efficiency.',
+        tools: [assets.java, assets.git, assets.figma, assets.androidStudio],
+        url: 'https://github.com/Prabin1500/RecipeApp',
+        bgImage: assets.recipe,
     },
 ]
 

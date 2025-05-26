@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
 import Skills from "./components/Skills";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function Home() {
 
@@ -35,10 +36,11 @@ export default function Home() {
   <>
     <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
     <Header isDarkMode={isDarkMode} />
+    <ScrollToTop isDarkMode={isDarkMode} />
     <About isDarkMode={isDarkMode} />
+    <Project isDarkMode={isDarkMode} />
     <Skills isDarkMode={isDarkMode} />
     <Experience isDarkMode={isDarkMode} />
-    <Project isDarkMode={isDarkMode} />
     <Contact isDarkMode={isDarkMode} />
     <Footer isDarkMode={isDarkMode} />
   </>
