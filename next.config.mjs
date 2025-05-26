@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
+const isGithubPages = process.env.DEPLOY_ENV === 'GH_PAGES';
+
 const nextConfig = {
-  // For Webpack
-  webpack: (config) => {
+
+  assetPrefix: isGithubPages ? '/My-Portfolio/' : '',
+  basePath: isGithubPages ? '/My-Portfolio' : '',
+  trailingSlash: true,
+
+  webpack(config) {
     config.module.rules.push({
       test: /\.(pdf)$/i,
       type: 'asset/resource',
@@ -11,7 +17,7 @@ const nextConfig = {
     });
     return config;
   },
-  // For Turbopack
+
   experimental: {
     turbo: {
       rules: {
@@ -21,6 +27,6 @@ const nextConfig = {
       }
     }
   }
-}
+};
 
 export default nextConfig;
