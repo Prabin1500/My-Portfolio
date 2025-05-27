@@ -1,4 +1,4 @@
-import { assets } from '@/asstes/assets'
+import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { SocialIcon } from 'react-social-icons';

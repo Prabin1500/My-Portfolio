@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import arrowIcon from '../../asstes/arrow-icon.png';
-import bgheader from '../../asstes/header-bg-color.png';
-import moonIcon from '../../asstes/moon_icon.png';
+import arrowIcon from '../../assets/arrow-icon.png';
+import bgheader from '../../assets/header-bg-color.png';
+import moonIcon from '../../assets/moon_icon.png';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs' 
-import { assets } from '@/asstes/assets';
+import { assets } from '@/assets/assets';
 
 const Navbar = ({isDarkMode, setIsDarkMode}) => {
     const [isScroll, setIsScroll] = useState(false);

@@ -2,7 +2,10 @@
 const isGithubPages = process.env.DEPLOY_ENV === 'GH_PAGES';
 
 const nextConfig = {
-
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
   assetPrefix: isGithubPages ? '/My-Portfolio/' : '',
   basePath: isGithubPages ? '/My-Portfolio' : '',
   trailingSlash: true,

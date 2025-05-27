@@ -1,4 +1,4 @@
-import { toolsData } from '@/asstes/assets'
+import { toolsData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
