@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { infoList } from '@/assets/assets'
+import { infoList } from '@/public/assets/images/assets'
 import { motion } from "motion/react"
 import { FaCss3, FaGithub, FaHtml5, FaJsSquare, FaNodeJs, FaReact } from 'react-icons/fa';
 

@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import userImage from '../../assets/UserImage.jpg'
-import handIcon from '../../assets/hand-icon.png'
-import rightArrowWhite from '../../assets/right-arrow-white.png'
-import { assets } from '@/assets/assets'
+import userImage from '../../public/assets/images/UserImage.jpg'
+import handIcon from '../../public/assets/images/hand-icon.png'
+import rightArrowWhite from '../../public/assets/images/right-arrow-white.png'
+import { assets } from '@/public/assets/images/assets'
 import { motion } from "motion/react"
 
 const Header = () => {
