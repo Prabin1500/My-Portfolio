@@ -6,7 +6,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: isGithubPages ? '/My-Portfolio/' : '',
+  assetPrefix: isGithubPages ? '/My-Portfolio/assets' : '',
   basePath: isGithubPages ? '/My-Portfolio' : '',
   trailingSlash: true,
 
